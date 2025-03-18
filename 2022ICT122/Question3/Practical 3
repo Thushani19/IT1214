@@ -4,10 +4,10 @@ Date & Time :14.03.2025 10.30a.m - 12.30pm
 Objectives : 
 Theory / Concept :
 Algorithm :
-     START
-       INPUT ar;
-       PRINT ar[0]," ",ar[2]," "+ar[1];
-     END
+     Step1:START
+     Step2:INPUT ar;
+     Step3:PRINT ar[0]," ",ar[2]," "+ar[1];
+     Step4:END
 Source code :
          import java.io.*;
 
