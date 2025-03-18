@@ -1,0 +1,27 @@
+Practical number : 02
+Title: Introduction to java programming.
+Date & Time :14.03.2025 10.30a.m - 12.30pm
+Objectives : 
+Theory / Concept :
+Algorithm :
+     START
+       INPUT commandline arguments;
+       PRINT "The first argument is ",(args[ 0]);
+       PRINT "The second argument is ",(args[ 1]);
+       PRINT "The third argument is ",(args[ 2]);
+     END
+Source code :
+          import java.io.*;
+          
+          class MySecondClass
+          {
+          	public static void main(String[] args)
+          	{
+          		System.out.print("The first argument is "+args[ 0]);
+          		System.out.print("The second argument is "+args[ 1]);
+          		System.out.print(" The thirt argument is "+args[ 2]);
+          		
+          	}
+          }
+Output :The first argument is Hi.The second argument is I'm The thirt argument is Shakthy
+Conclusion :I learnt how to get the input from the user and give the output in java.
