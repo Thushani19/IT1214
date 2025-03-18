@@ -4,9 +4,9 @@ Date & Time :14.03.2025 10.30a.m - 12.30pm
 Objectives : To understand basic syntax and structure of a java program.
 Theory / Concept :Java programs consist of classes & methods, Every application has a main method where execution begins.
 Algorithm :
-     START
-       PRINT "Hi This is IT1214 practical session1 This print next line This is in a new line ";
-     END
+     Step1:START
+     Step2:PRINT "Hi This is IT1214 practical session1 This print next line This is in a new line ";
+     Step3:END
 Source code :
 import java.io.*;
 
