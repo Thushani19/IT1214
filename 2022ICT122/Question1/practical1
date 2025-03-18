@@ -5,7 +5,7 @@ Objectives : To understand basic syntax and structure of a java program.
 Theory / Concept :Java programs consist of classes & methods, Every application has a main method where execution begins.
 Algorithm :
      START
-       OUTPUT "Hi This is IT1214 practical session1 This print next line This is in a new line ";
+       PRINT "Hi This is IT1214 practical session1 This print next line This is in a new line ";
      END
 Source code :
 import java.io.*;
