@@ -5,7 +5,7 @@ Objectives :
 Theory / Concept :
 Algorithm :
      START
-       INPUT commandline arguments;
+       INPUT args;
        PRINT "The first argument is ",(args[ 0]);
        PRINT "The second argument is ",(args[ 1]);
        PRINT "The third argument is ",(args[ 2]);
