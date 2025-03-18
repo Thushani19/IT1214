@@ -1,0 +1,28 @@
+Practical number : 03
+Title: Introduction to java programming.
+Date & Time :14.03.2025 10.30a.m - 12.30pm
+Objectives : 
+Theory / Concept :
+Algorithm :
+     START
+       INPUT ar;
+       PRINT ar[0]," ",ar[2]," "+ar[1];
+     END
+Source code :
+         import java.io.*;
+
+         class MyThirdClass
+         {
+          	public static void main(String[] ar)
+          {
+          	System.out.println(ar[0]+" "+ar[2]+" "+ar[1]);
+          
+          		
+          }
+          }
+
+    //mythirdclass :How are you
+    //output:How you are
+
+Output :How you are
+Conclusion :I learnt how to get the input from the user and give the output in java.
