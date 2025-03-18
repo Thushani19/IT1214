@@ -4,12 +4,12 @@ Date & Time :14.03.2025 10.30a.m - 12.30pm
 Objectives : 
 Theory / Concept :
 Algorithm :
-     START
-       INPUT args;
-       PRINT "The first argument is ",(args[ 0]);
-       PRINT "The second argument is ",(args[ 1]);
-       PRINT "The third argument is ",(args[ 2]);
-     END
+     Step1:START
+     Step2:INPUT args;
+     Step3:PRINT "The first argument is ",(args[ 0]);
+     Step4:PRINT "The second argument is ",(args[ 1]);
+     Step5:PRINT "The third argument is ",(args[ 2]);
+     Step6:END
 Source code :
           import java.io.*;
           
