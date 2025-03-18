@@ -1,0 +1,59 @@
+Practical number : 04
+Title: Introduction to java programming.
+Date & Time :14.03.2025 10.30a.m - 12.30pm
+Objectives : 
+Theory / Concept :
+Algorithm :
+     START
+
+
+
+     END
+Source code :
+         class One
+        {
+        	int a=10;
+        	int b;
+        	
+        	void printDetails()
+        	{
+        		System.out.println("Fron Class One a ="+a);
+        		System.out.println("Fron Class One b ="+b);
+        	}
+        }
+        
+        class Two
+        {
+        	int a,c;
+        	void printDetails()
+      	{
+      		System.out.println("Fron Class Two a ="+a);
+      		System.out.println("Fron Class Two c ="+c);
+      	}
+      }
+      
+      class App
+      {
+      	public static void main (String args[])
+      	{
+      		One o1=new One();
+      		Two t1=new Two();
+      		
+      		o1.printDetails();
+      		o1.b=50;
+      		o1.printDetails();
+      		t1.printDetails();
+      		t1.a=10;
+      		t1.c=30;
+      		t1.printDetails();
+      	}
+      }
+Output :Fron Class One a =10
+Fron Class One b =0
+Fron Class One a =10
+Fron Class One b =50
+Fron Class Two a =0
+Fron Class Two c =0
+Fron Class Two a =10
+Fron Class Two c =30
+Conclusion :I learnt how to get the input from the user and give the output in java.
