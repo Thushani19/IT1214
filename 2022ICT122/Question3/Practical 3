@@ -1,13 +1,32 @@
 Practical number : 03
 Title: Introduction to java programming.
 Date & Time :14.03.2025 10.30a.m - 12.30pm
-Objectives : 
-Theory / Concept :
+
+Objectives : To understand the fundamental structure of a basic Java program, 
+     including:
+          Importing packages
+          Class declaration
+          Main method structure
+          Variable initialization
+          Basic statements
+
+Theory / Concept :In Java, all code resides within a class. A class is a blueprint for creating objects.
+The basic syntax for declaring a class is:
+               public class ClassName {
+                   // Class body
+               }
+               Main Method
+               The main method serves as the entry point for Java applications. Its signature is:
+               
+               public static void main(String[] args) {
+                   // Program execution starts here
+               }
 Algorithm :
      Step1:START
      Step2:INPUT ar;
      Step3:PRINT ar[0]," ",ar[2]," "+ar[1];
      Step4:END
+
 Source code :
          import java.io.*;
 
