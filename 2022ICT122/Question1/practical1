@@ -5,28 +5,31 @@ Date & Time :14.03.2025 10.30a.m - 12.30pm
 Objectives : To understand basic syntax and structure of a java program.
 
 Theory / Concept :Java programs consist of classes & methods, Every application has a main method where execution begins.
-Explanation:
-public: Allows access from outside the class.
-static: Enables execution without creating an object.
-void: Indicates no return value.
-String[] args: Holds command-line arguments.
+   	 Explanation:
+		public: Allows access from outside the class.
+		static: Enables execution without creating an object.
+		void: Indicates no return value.
+		String[] args: Holds command-line arguments.
 
 Algorithm :
      Step1:START
      Step2:PRINT "Hi This is IT1214 practical session1 This print next line This is in a new line ";
      Step3:END
-Source code :
-import java.io.*;
 
-class MyFirstClass
-{
-	public static void main(String[] args)
+Source code :
+	import java.io.*;
+	
+	class MyFirstClass
 	{
-		System.out.print("Hi ");
-		System.out.print("This is IT1214 practical session1 ");
-		System.out.print("This print next line ");
-		System.out.print("This is in a new line ");
+		public static void main(String[] args)
+		{
+			System.out.print("Hi ");
+			System.out.print("This is IT1214 practical session1 ");
+			System.out.print("This print next line ");
+			System.out.print("This is in a new line ");
+		}
 	}
-}
+
 Output : Hi This is IT1214 practical session1 This print next line This is in a new line.
+
 Conclusion :I learnt about the java programming.
