@@ -23,13 +23,13 @@ Theory / Concept :In Java, all code resides within a class. A class is a bluepri
             }
 
 Algorithm :
-     Start.
-     Define class One (not provided).
-     Define class Two with instance variables and methods.
-     Define class Num with the main method.
-     Instantiate objects of One and Two.
-     Assign values and call methods.
-     End.
+     Step1:Start.
+     Step2:Define class One (not provided).
+     Step3:Define class Two with instance variables and methods.
+     Step4:Define class Num with the main method.
+     Step5:Instantiate objects of One and Two.
+     Step6:Assign values and call methods.
+     Step7:End.
 
 Source code :
          class One
