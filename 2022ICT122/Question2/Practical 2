@@ -1,8 +1,21 @@
 Practical number : 02
 Title: Introduction to java programming.
 Date & Time :14.03.2025 10.30a.m - 12.30pm
-Objectives : 
+
+Objectives : To understand the fundamental structure of a basic Java program.
+     including:
+          Importing packages
+          Class declaration
+          Main method structure
+          Variable initialization
+          Basic statements
+
 Theory / Concept :
+     public: Allows access from outside the class.
+     static: Enables execution without creating an object.
+     void: Indicates no return value.
+     String[] args: Holds command-line arguments.
+
 Algorithm :
      Step1:START
      Step2:INPUT args;
@@ -10,6 +23,7 @@ Algorithm :
      Step4:PRINT "The second argument is ",(args[ 1]);
      Step5:PRINT "The third argument is ",(args[ 2]);
      Step6:END
+
 Source code :
           import java.io.*;
           
