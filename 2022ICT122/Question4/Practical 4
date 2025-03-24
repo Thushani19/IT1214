@@ -1,14 +1,36 @@
 Practical number : 04
 Title: Introduction to java programming.
 Date & Time :14.03.2025 10.30a.m - 12.30pm
-Objectives : 
-Theory / Concept :
+
+Objectives : To understand the fundamental structure of a basic Java program.
+          including:-
+          Importing packages
+          Class declaration
+          Main method structure
+          Variable initialization
+          Basic statements
+
+Theory / Concept :In Java, all code resides within a class. A class is a blueprint for creating objects. The basic syntax for declaring a class is:
+
+           public class ClassName {
+                // Class body
+           }
+           Main Method
+           The main method serves as the entry point for Java applications. Its signature is:
+               
+          public static void main(String[] args) {
+              // Program execution starts here
+            }
+
 Algorithm :
-     START
+     Start.
+     Define class One (not provided).
+     Define class Two with instance variables and methods.
+     Define class Num with the main method.
+     Instantiate objects of One and Two.
+     Assign values and call methods.
+     End.
 
-
-
-     END
 Source code :
          class One
         {
@@ -48,6 +70,7 @@ Source code :
       		t1.printDetails();
       	}
       }
+
 Output :Fron Class One a =10
 Fron Class One b =0
 Fron Class One a =10
@@ -56,4 +79,5 @@ Fron Class Two a =0
 Fron Class Two c =0
 Fron Class Two a =10
 Fron Class Two c =30
+
 Conclusion :I learnt how to get the input from the user and give the output in java.
