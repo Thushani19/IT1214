@@ -1,0 +1,91 @@
+Practical number : 02
+Title: Introduction to java programming.
+Date & Time :20.03.2025 10.30a.m - 12.30pm
+
+Objectives : To understand basic syntax and structure of a java program.
+
+Theory / Concept :Java programs consist of classes & methods, Every application has a main method where execution begins.
+   	 Explanation:
+		public: Allows access from outside the class.
+		static: Enables execution without creating an object.
+		void: Indicates no return value.
+		String[] args: Holds command-line arguments.
+
+Algorithm :
+     Step1:START
+     Step2:Import the necessary package (import it.*;
+                                         import it.hons.*;
+                                         import amc.*;).
+     Step3:Define a class named [FirstYear(it,amc),SecondYear,FourthYear,App].
+     Step4:Inside the class, create the main method.
+     Step5:PRINT using System.out.println().
+     Step6:END
+
+Source code :
+
+//App.java
+
+  import it.*;
+  import it.hons.*;
+  import amc.*;
+  
+  class App{
+  	public static void main(String[] ar){
+  		it.FirstYear sy=new it.FirstYear();
+  		amc.FirstYear syi=new amc.FirstYear();
+  		SecondYear si=new SecondYear();
+  		ForthYear itHons=new ForthYear();
+  		
+  		sy.display();
+  		syi.display();
+  		si.display();
+  		itHons.display();
+    	}
+    }
+
+//FirstYear.java(it)
+
+package it;
+
+public class FirstYear{
+	public void display(){
+		System.out.println("Hi from FirstYear in package it");
+	}
+}
+
+//ForthYear.java(hons)
+
+package it.hons;
+
+public class ForthYear{
+	public void display(){
+		System.out.println("Hi from ForthYear in package it.hons");
+	}
+}
+
+//FirstYear.java(amc)
+
+package amc;
+
+public class FirstYear{
+	public void display(){
+		System.out.println("Hi from FirstYear AMC in package amc");
+	}
+}
+
+//SecondYear.java(amc)
+
+package amc;
+
+public class SecondYear{
+	public void display(){
+		System.out.println("Hi from SecondYear in package amc");
+	}
+}
+
+Output : Hi from FirstYear in package it
+         Hi from FirstYear AMC in package amc
+         Hi from SecondYear in package amc
+         Hi from ForthYear in package it.hons
+
+Conclusion :I learnt about the behaviour of classes in java programming.
