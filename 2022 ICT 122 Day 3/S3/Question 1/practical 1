@@ -71,26 +71,6 @@
       	-It also highlighted the role of access modifiers and how to handle naming collisions using fully qualified class names.
 
 
- 7.Source Code:
-     //App.java
-           import Human.* ;
-      
-            class App {
-            	public static void main(String[] args) {
-            		System.out.println("Welcome to Invoice App");
-            		Person shakthy = new Person ("Shakthy") ;
-            		shakthy.talk("Hello from Shakthy") ;
-            	}
-            }
-
-  //Human.java
-            package Human ;
-
-            public class Human {
-            	public void talk(String word){
-            		System.out.println("Human says : "+word);
-            	}
-            }
 
    //Person.java
              package Human ;
