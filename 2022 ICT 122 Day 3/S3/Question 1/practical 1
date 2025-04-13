@@ -68,38 +68,4 @@
 
 10.Conclusion:
       	-This practical demonstrated the importance of packages in Java for organizing code and avoiding name conflicts.
-      	-It also highlighted the role of access modifiers and how to handle naming collisions using fully qualified class names.
-
-
-
-   //Person.java
-             package Human ;
-
-              public class Person extends Human {
-              	String name ;
-              	
-              	public Person(String name){
-              		this.name=name;
-              	}
-              }
-
-8.Output:  Welcome to Invoice App
-           Human says : Hello from Shakthy
-9.Observations: 
-        1.Error Encountered:
-             -If directory structure does not match package name (e.g., Human/Human.java must be inside a Human folder), it results in a compilation error.
-        2.If classes are not compiled with proper classpath, the main program may not recognize the package classes.
-
-	 2.Resolution: -Maintained directory structure properly.
-
-   3.Behavior:
-        	-The talk() method is inherited from Human to Person and behaves as expected.
-      		-Creating a Person object and calling talk() prints the correct message.
-
-10. Conclusion: 
-          In this practical, we reinforced our understanding of:
-                	-How to use inheritance in Java (Person extending Human)           
-                	-Proper creation and importing of user-defined packages   
-                	-Calling inherited methods from subclass instances
-                	-This promotes better code organization, reuse, and clarity in larger Java projects.          
-        
+      	-It also highlighted the role of access modifiers and how to handle naming collisions using fully qualified class names.                 
