@@ -7,7 +7,7 @@
 5. Theory / Concept:- 
          This practical focuses on two major concepts in Java:
                   -Inheritance: A fundamental object-oriented concept where one class (Person) inherits properties and behaviors (methods) from another class (Human).
-        		      -Packages: A way to organize Java classes into namespaces. The Human and Person classes are both part of the Human package, allowing for structured organization and reuse.
+        	         -Packages: A way to organize Java classes into namespaces. The Human and Person classes are both part of the Human package, allowing for structured organization and reuse.
 
 6. Algorithm:
        Step1: Create a package named Human.
@@ -38,3 +38,33 @@
             		System.out.println("Human says : "+word);
             	}
             }
+ //Person.java
+             package Human ;
+
+              public class Person extends Human {
+              	String name ;
+              	
+              	public Person(String name){
+              		this.name=name;
+              	}
+              }
+
+8.Output:  Welcome to Invoice App
+           Human says : Hello from Shakthy
+9.Observations: 
+        1.Error Encountered:
+             -If directory structure does not match package name (e.g., Human/Human.java must be inside a Human folder), it results in a compilation error.
+        2.If classes are not compiled with proper classpath, the main program may not recognize the package classes.
+
+	 2.Resolution: -Maintained directory structure properly.
+
+   3.Behavior:
+        	-The talk() method is inherited from Human to Person and behaves as expected.
+      		-Creating a Person object and calling talk() prints the correct message.
+
+10. Conclusion: 
+          In this practical, we reinforced our understanding of:
+                	-How to use inheritance in Java (Person extending Human)           
+                	-Proper creation and importing of user-defined packages   
+                	-Calling inherited methods from subclass instances
+                	-This promotes better code organization, reuse, and clarity in larger Java projects. 
