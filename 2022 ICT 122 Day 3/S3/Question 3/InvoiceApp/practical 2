@@ -17,3 +17,24 @@
        Step5: Import all classes from the Human package using import Human.*;.
        Step6: In the App class, create an instance of Person, and call the inherited talk() method.
        Step7: Run the program to see the output.
+
+ 7.Source Code:
+     //App.java
+           import Human.* ;
+      
+            class App {
+            	public static void main(String[] args) {
+            		System.out.println("Welcome to Invoice App");
+            		Person shakthy = new Person ("Shakthy") ;
+            		shakthy.talk("Hello from Shakthy") ;
+            	}
+            }
+
+  //Human.java
+            package Human ;
+
+            public class Human {
+            	public void talk(String word){
+            		System.out.println("Human says : "+word);
+            	}
+            }
