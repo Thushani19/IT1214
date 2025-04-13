@@ -1,0 +1,19 @@
+1.Practical:02 
+2.Title : Inheritance and Package Implementation in Java.
+3.Date & Time : 21.03.2025 | 10:30 AM – 12:30 PM
+
+4. Objectives:- To understand the concept of inheritance and how packages help organize classes in Java.
+
+5. Theory / Concept:- 
+         This practical focuses on two major concepts in Java:
+                  -Inheritance: A fundamental object-oriented concept where one class (Person) inherits properties and behaviors (methods) from another class (Human).
+        		      -Packages: A way to organize Java classes into namespaces. The Human and Person classes are both part of the Human package, allowing for structured organization and reuse.
+
+6. Algorithm:
+       Step1: Create a package named Human.
+       Step2: In this package, define a class Human with a method talk(String word) that prints a message.
+       Step3: Also in the Human package, create a Person class that extends Human and has a constructor to set the person's name.
+       Step4: Create a class App in the default package.
+       Step5: Import all classes from the Human package using import Human.*;.
+       Step6: In the App class, create an instance of Person, and call the inherited talk() method.
+       Step7: Run the program to see the output.
