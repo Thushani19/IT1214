@@ -1,0 +1,232 @@
+1.Practical: 01 
+2.Title : Constructors, Getters & Setters, and Object-Oriented Programming in Java.
+3.Date & Time: 27.03.2025 | 1:30 PM – 3:30 PM
+
+4. Objectives: 
+        -To understand the use of:
+        -Constructors (default, parameterized)
+        -Getters and setters
+        -Object creation and manipulation in Java using OOP principles.
+
+5. Theory / Concept:
+        This practical focuses on Object-Oriented Programming (OOP) concepts:
+                1.Classes & Objects: Real-world entities represented as code structures.
+                2.Constructors: Special methods used to initialize objects.
+                          -Default constructor
+                          -Parameterized constructors
+                3.Encapsulation: Using private fields and public getters/setters to control access.
+                4.Method Overloading: Multiple constructors in Student class demonstrating constructor overloading.
+
+ 6. Algorithm :
+          Algorithm for AllInOneDemo Program:
+
+            		Step1: Define a Student class with overloaded constructors.
+            		Step2: Create multiple Student objects using different constructors.
+            		Step3: Print the name and marks of each student.
+            		Step4: Define a Car class with a private field model.
+            		Step5: Provide getter and setter methods for the model field.
+            		Step6: Create Car objects and demonstrate setting and retrieving the model name.
+            		Step7: Implement a helper print() method for formatted output.         
+
+  7. Source Code:
+        //AllInOneDemo.java
+
+              class AllInOneDemo{
+            	static void print(String s)
+            	{
+            		System.out.println(s);
+            	}
+            	
+            	public static void main(String[] args)
+            	{
+            		Student s1=new Student("Siva");
+            		Student s2=new Student();
+            		Student s3=new Student("Shakthy",75);
+            		
+            		print("Name of the Student s1 is "+s1.name+" , Marks = "+s1.marks);
+            		print("Name of the Student s2 is "+s2.name+" , Marks = "+s1.marks);
+            		print("Name of the Student s3 is "+s3.name+" , Marks = "+s1.marks);
+            		print("Name of the Student s3 is "+s3.name+" , Marks = "+s3.marks);
+            	}
+            }
+
+        //Car1.java
+                class Car{
+              	private String model;
+              	
+              public String getModel(){
+              	return model;
+              	}
+              public void setModel(String newModel){
+              	this.model=newModel;
+              }
+              }
+              public class Car1
+              {
+              	public static void main(String args[])
+              	{
+              		Car Obj1=new Car();
+              		Obj1.setModel("Toyota Corolla");
+              		System.out.println(Obj1.getModel());
+              	}
+              }
+
+        //Main.java
+
+              class Person
+               {
+                  private String name;
+                      	
+                  public String getName()
+                  {
+                      return name;
+                  }
+                      	
+                    public void setName(String newName)
+                    {
+                       this.name=newName;
+                    }
+                    }
+                      
+                  public class Main
+                  {
+                  	public static void main(String [] args)
+                    {
+                    	Person p1=new Person(); 
+                    	p1.setName("John");
+                    	System.out.println(p1.getName());
+                    }
+                    	
+                   }
+
+      //Person.java
+                class Person
+                {
+                	private String name;
+                	
+                	public String getName()
+                	{
+                		return name;		
+                	}
+                	
+                	public void setName(String newName){
+                		this.name=newName;
+                	}
+                	
+                }
+
+                class Main
+                {
+                	public static void main(String[] args)
+                	{
+                		Person p1=new Person();
+                		p1.setName("siva");
+                		System.out.println(p1.getName());
+                	}		
+                	
+                }
+
+       //Student.java
+                 class Student
+                  {
+                  	String name="Adam";
+                  	int marks=100;
+                  	
+                  	Student()
+                  	{
+                  		name="noname";
+                  	}
+                  	
+                  	Student (String n)
+                  	{
+                  		name=n;
+                  	}	
+
+                	Student(String n,int m)
+                	{
+                		name=n;
+                		marks=m;
+                	}		
+                }
+                
+                /*
+                class TestClass{
+                	int a;
+                	public static void main(String[] args){
+                		System.out.println("Hi from TestClass Class");
+                	}
+	
+                }
+                */
+                
+                class StudentDemo{
+                	public static void main(String[] args){
+                		System.out.println("Hi from StudentDemo Class");
+                		System.out.println("Creating an object of Student Class");
+                		
+                		//Student s1=new Student();  //s1 is a student object.
+                		//Student s1=new Student("NiceName");
+                		Student s1=new Student("NiceName",85);
+                		System.out.println("Creating an object of Student Class");
+		
+                		System.out.println("Name value of the  object is "+ s1.name );
+                		System.out.println("marks value of the  object is "+ s1.marks );
+                		s1.name="Bob"; //setting the variable value
+                		s1.marks=10;
+		
+                  		System.out.println("Name value of the  object is "+ s1.name );
+                  		System.out.println("marks value of the  object is "+ s1.marks );
+                  	}
+                  }
+
+8. Expected Output
+
+	-Sample Output (AllInOneDemo):
+        C:\Users\Admin\Desktop\2022 ICT 122 Day 4\Question 1>javac AllInOneDemo.java
+        C:\Users\Admin\Desktop\2022 ICT 122 Day 4\Question 1>java AllInOneDemo
+                Name of the Student s1 is Siva , Marks = 100
+                Name of the Student s2 is noname , Marks = 100
+                Name of the Student s3 is Shakthy , Marks = 100
+                Name of the Student s3 is Shakthy , Marks = 75
+
+	-Sample Output (Car1.java):
+            C:\Users\Admin\Desktop\2022 ICT 122 Day 4\Question 1>javac Car1.java
+            C:\Users\Admin\Desktop\2022 ICT 122 Day 4\Question 1>java Car1
+                  Toyota Corolla
+		
+
+	-Sample Output (Main.java):
+           C:\Users\Admin\Desktop\2022 ICT 122 Day 4\Question 1>javac Main.java
+           C:\Users\Admin\Desktop\2022 ICT 122 Day 4\Question 1>java Main
+                  John
+
+   -Sample Output (StudentDemo.java):
+            C:\Users\Admin\Desktop\2022 ICT 122 Day 4\Question 1>javac Student.java
+            C:\Users\Admin\Desktop\2022 ICT 122 Day 4\Question 1>java StudentDemo
+                    Hi from StudentDemo Class
+                    Creating an object of Student Class
+                    Creating an object of Student Class
+                    Name value of the  object is NiceName
+                    marks value of the  object is 85
+                    Name value of the  object is Bob
+                    marks value of the  object is 10 
+
+  9. Observations:
+
+	1.Errors Encountered:
+		-Duplicate class names (Person) caused issues in file compilation. Fixed by keeping each class in its own file.
+		-Private variables require getter/setter methods to access them from outside the class.
+
+	2.Program Behavior:
+		-Demonstrated different constructor calls and output values accordingly.
+		-Verified encapsulation with successful use of getters/setters.
+		-Changing values of public fields and private fields (via setters) worked as expected.
+
+10. Conclusion:
+	In this practical, we learned how to:
+		-Use multiple constructors to initialize objects differently
+		-Apply encapsulation via private fields and getter/setter methods
+		-Create and manipulate objects in Java programs
+		-Organize multiple classes to test and demonstrate OOP concepts effectively
+	This enhances understanding of class design and object interaction in Java.                  
+  
