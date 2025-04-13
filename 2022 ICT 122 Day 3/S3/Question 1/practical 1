@@ -1,0 +1,145 @@
+1.Practical: 01
+2.Title : Introduction to Java Programming 
+3.Date & Time : 21.03.2025 (10.30a.m - 12.30p.m)
+
+4.Objectives:The objective of this practical is to understand the basic syntax and structure of a Java program, including packages,
+           classes, and methods.
+
+5.Theory / Concept:
+         -In Java, packages are used to group related classes and avoid naming conflicts. 
+      	-A package is declared at the beginning of a Java file using the package keyword.  
+      	-The import statement is used to include classes from different packages. 
+      	-This practical demonstrates how to create and use packages, instantiate classes from different packages, and call their methods.
+
+6.Algorithm:
+        Step1: Create a package named a and define a class Test with methods print() and display().
+        Step2: Create another package named b and define a class Test with a print() method.
+        Step3: Create a main class App in the default package.
+        Step4: Import both packages a and b in App.
+        Step5: Instantiate objects of both a.Test and b.Test.
+        Step6: Call the respective methods and observe the output.
+
+ 7.Source Code:
+  // a.Test.java
+         package a;
+      
+        public class Test{
+        	void print(){
+        		System.out.println("Hi from class Test in package a");
+        	}
+        	public void display(){
+        		print();
+        		System.out.println("Display: Hi from class Test in package a");
+        	}
+        }
+
+    //b.Test.java
+          package b;
+        
+          public class Test{
+          	public void print(){
+          		System.out.println("Hi from class Test in package b");
+          	}
+          }
+
+    //App.java
+          import a.*;
+          import b.*;
+          
+          class App{
+          	public static void main(String[] args){
+          		a.Test t1=new a.Test();
+          		b.Test t2=new b.Test();
+          		
+          		t1.display();
+          		t2.print();
+          	}
+          }
+
+8.Expected Output:
+          Hi from class Test in package a
+          Display: Hi from class Test in package a
+          Hi from class Test in package b
+
+ 9.Observations:
+      	- Encountered an ambiguity issue when importing a.* and b.* together. The solution was to use fully qualified names (a.Test and b.Test) when instantiating objects.
+      	- Default access modifier restricts method access outside the package. Changing the print() method in a.Test to public resolves the issue.
+      	- Java prevents name conflicts by requiring fully qualified names when classes have the same name in different packages.
+
+10.Conclusion:
+      	-This practical demonstrated the importance of packages in Java for organizing code and avoiding name conflicts.
+      	-It also highlighted the role of access modifiers and how to handle naming collisions using fully qualified class names.
+
+
+1.Practical:02 
+2.Title : Inheritance and Package Implementation in Java.
+3.Date & Time : 21.03.2025 | 10:30 AM – 12:30 PM
+
+4. Objectives:- To understand the concept of inheritance and how packages help organize classes in Java.
+
+5. Theory / Concept:- 
+         This practical focuses on two major concepts in Java:
+                  -Inheritance: A fundamental object-oriented concept where one class (Person) inherits properties and behaviors (methods) from another class (Human).
+        		      -Packages: A way to organize Java classes into namespaces. The Human and Person classes are both part of the Human package, allowing for structured organization and reuse.
+
+6. Algorithm:
+       Step1: Create a package named Human.
+       Step2: In this package, define a class Human with a method talk(String word) that prints a message.
+       Step3: Also in the Human package, create a Person class that extends Human and has a constructor to set the person's name.
+       Step4: Create a class App in the default package.
+       Step5: Import all classes from the Human package using import Human.*;.
+       Step6: In the App class, create an instance of Person, and call the inherited talk() method.
+       Step7: Run the program to see the output.
+
+ 7.Source Code:
+     //App.java
+           import Human.* ;
+      
+            class App {
+            	public static void main(String[] args) {
+            		System.out.println("Welcome to Invoice App");
+            		Person shakthy = new Person ("Shakthy") ;
+            		shakthy.talk("Hello from Shakthy") ;
+            	}
+            }
+
+  //Human.java
+            package Human ;
+
+            public class Human {
+            	public void talk(String word){
+            		System.out.println("Human says : "+word);
+            	}
+            }
+
+   //Person.java
+             package Human ;
+
+              public class Person extends Human {
+              	String name ;
+              	
+              	public Person(String name){
+              		this.name=name;
+              	}
+              }
+
+8.Output:  Welcome to Invoice App
+           Human says : Hello from Shakthy
+9.Observations: 
+        1.Error Encountered:
+             -If directory structure does not match package name (e.g., Human/Human.java must be inside a Human folder), it results in a compilation error.
+        2.If classes are not compiled with proper classpath, the main program may not recognize the package classes.
+
+	 2.Resolution: -Maintained directory structure properly.
+
+   3.Behavior:
+        	-The talk() method is inherited from Human to Person and behaves as expected.
+      		-Creating a Person object and calling talk() prints the correct message.
+
+10. Conclusion: 
+          In this practical, we reinforced our understanding of:
+                	-How to use inheritance in Java (Person extending Human)           
+                	-Proper creation and importing of user-defined packages   
+                	-Calling inherited methods from subclass instances
+                	-This promotes better code organization, reuse, and clarity in larger Java projects.          
+        
