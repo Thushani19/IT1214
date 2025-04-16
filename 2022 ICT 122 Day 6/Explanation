@@ -1,0 +1,179 @@
+1. Practical Number:- 06 
+2. Title:- Constructors and Object Handling in Java
+3. Date & Time:- 03.04.2025 1.30p.m to 3.30p.m
+
+4. Objectives:- 
+            Understand the concept of constructors in Java
+            Learn how to create and initialize objects using default and parameterized constructors
+            Demonstrate simple class interaction through method calls
+            Practice object-oriented programming concepts
+
+5. Theory / Concept:- 
+            A constructor in Java is a special method used to initialize objects. It is called automatically when an object is created. There are two main types of constructors:
+            Default Constructor: Takes no parameters and initializes default values.
+            Parameterized Constructor: Takes arguments and initializes object properties based on those.
+            Additionally, methods in other classes (like the Printer class) can be used to interact with or display object data, showcasing modular and reusable code.
+
+6. Algorithm / Flowchart:- 
+              Steps to Follow:
+                  Create the Students class with:
+                  Fields: marks (int) and Name (String)
+                  Constructors: default and parameterized
+                  Create the Printer class with:
+                  A method print(String x) to display a message
+                  In the App class (with main() method):
+                  Create an object of Printer and call its method
+                  Create two Students objects using:
+                  Default constructor (and set values later)
+                  Parameterized constructor
+                  Display each student’s name and marks using System.out.println()
+
+7. Source Code:- 
+          //App.java (Question 1)
+          
+                    class Student{
+                  	int marks;
+                  	String name;
+                  	
+                  	Student(){
+                  		System.out.println("Creating a Student Object");
+                  		name="Default Name";
+                  	}
+                  	
+                  	Student(String n,int m){
+                  		System.out.println("Creating a Student Object with name "+n+" and marks "+m);
+                  		name="Default Name";
+                  	}
+                  	
+                  }
+
+                  class Printer{
+                  	void print(String s){
+                  		System.out.println(s);
+                  	}
+                  }
+          
+          
+                  class App{
+                  	public static void main(String[] args){
+                  		System.out.println("Welcome to Demo Class App");
+                  		//Printer p=new Printer();
+                  		//p.print("Display Demo Class App");
+                  
+                  	Student st1=new Student();
+                  	st1.marks=100;
+                  	System.out.println("Name of the Student st1 is "+st1.name+" for "+st1.marks);
+                  	
+                  	st1.name="Siva";
+                  	System.out.println("Marks of "+st1.name+" for "+st1.marks);
+                  	System.out.println("Name of the Student st1 is "+st1.name+" for "+st1.marks);
+                  	//p.print("Name of the Student st1 is "+st1.name+" for "+st1.marks);
+        	
+                  	Student st2=new Student();
+                  	st2.marks=90;
+                  	st2.name="Isha";
+                  	System.out.println("Name of the Student st2 is "+st2.name+" for "+st2.marks);
+                  	
+                  	
+                  	Student st3=new Student("Shakthy",80);
+                  	System.out.println("Name of the Student st3 is "+st3.name+" for "+st3.marks);
+                  	
+                  	}
+                  	
+                  }
+
+
+        ///App.java (Question 2)
+
+                  class Student{
+                	int marks;
+                	String name;
+                	
+                	Student(){
+                		System.out.println("Creating a Student Object");
+                		name="Default Name";
+                	}
+                	
+                	Student(String n,int m){
+                		System.out.println("Creating a Student Object with name "+n+" and marks "+m);
+                		name="Default Name";
+                	}
+                	
+                }
+                /*
+                class Printer{
+                	void print(String s){
+                		System.out.println(s);
+                	}
+                }*/
+
+
+                class App{
+                	public static void main(String[] args){
+                		System.out.println("Welcome to Demo Class App");
+                		Printer p=new Printer();
+                		p.print("Display Demo Class App");
+                
+                	Student st1=new Student();
+                	st1.marks=100;
+                	System.out.println("Name of the Student st1 is "+st1.name+" for "+st1.marks);
+                	
+                	st1.name="Siva";
+                	System.out.println("Marks of "+st1.name+" for "+st1.marks);
+                	//System.out.println("Name of the Student st1 is "+st1.name+" for "+st1.marks);
+                	p.print("Name of the Student st1 is "+st1.name+" for "+st1.marks);
+                	
+                	Student st2=new Student();
+                	st2.marks=90;
+                	st2.name="Isha";
+                	System.out.println("Name of the Student st2 is "+st2.name+" for "+st2.marks);
+                	
+                	
+                	Student st3=new Student("Shakthy",80);
+                	System.out.println("Name of the Student st3 is "+st3.name+" for "+st3.marks);
+                	
+                	}
+                	
+                }
+
+8. Output:-
+        Question 1:
+                C:\Users\Admin\Desktop\2022 ICT 122 Day 6\Question 1>javac App.java
+
+                C:\Users\Admin\Desktop\2022 ICT 122 Day 6\Question 1>java App
+                Welcome to Demo Class App
+                Creating a Student Object
+                Name of the Student st1 is Default Name for 100
+                Marks of Siva for 100
+                Name of the Student st1 is Siva for 100
+                Creating a Student Object
+                Name of the Student st2 is Isha for 90
+                Creating a Student Object with name Shakthy and marks 80
+                Name of the Student st3 is Default Name for 0
+
+         Question 2:
+                C:\Users\Admin\Desktop\2022 ICT 122 Day 6\Question 2>javac App.java
+
+                C:\Users\Admin\Desktop\2022 ICT 122 Day 6\Question 2>java App
+                Welcome to Demo Class App
+                Display Demo Class App
+                Creating a Student Object
+                Name of the Student st1 is Default Name for 100
+                Marks of Siva for 100
+                Name of the Student st1 is Siva for 100
+                Creating a Student Object
+                Name of the Student st2 is Isha for 90
+                Creating a Student Object with name Shakthy and marks 80
+                Name of the Student st3 is Default Name for 0
+        
+9. Observations:- 
+            The default constructor was successfully called and later modified using object reference.
+            The parameterized constructor directly initialized the object with values.
+            The Printer class showed basic class-to-class interaction using method calls.
+            Demonstrated good understanding of OOP principles like encapsulation and modularity.
+
+10. Conclusion:- 
+            This practical effectively demonstrated how Java constructors (default and parameterized) 
+            are used to initialize object data. It also showed how different classes can interact to 
+            create a modular and maintainable structure. 
+
